@@ -22,7 +22,7 @@ client.on("guildMemberAdd", member =>{
 	const channel = member.guild.channels.find('name','general');
 	const introductions = member.guild.channels.find('name','introductions');
 	if(!channel) return;
-	channel.send(`Welcome to the witchsquad, ${member}! Refer to ${introductions} for more details!`);
+	channel.send(`Welcome to the witchsquad, ${member}! Refer to ${help} for more details!`);
 	member.addRole(member.guild.roles.find('name','member')).catch(console.error);
 	member.addRole(member.guild.roles.find('name','add pronouns')).catch(console.error);
 });
