@@ -1,0 +1,12 @@
+{
+  "name": "xedbot",
+  "version": "0.0.1",
+  "description": "friendly helper bot",
+  "main": "bot.js",
+  "author": "xed",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.2.1",
+    "winston": "^2.4.0"
+  }
+}
