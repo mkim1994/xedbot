@@ -3,7 +3,7 @@
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = "Mzg1NTExNzk4OTg1NzE5ODI4.DQCbYw.FD0HhhkcnXM6U_HuvT5gadWAKrU";
+//const token = "Mzg1NTExNzk4OTg1NzE5ODI4.DQCbYw.FD0HhhkcnXM6U_HuvT5gadWAKrU";
 
 client.on('ready',()=>{
 	console.log('i am ready!');
@@ -15,7 +15,8 @@ client.on('message',message=>{
 	}
 });
 
-client.login(token);
+//client.login(token);
+client.login(process.env.BOT_TOKEN);
 
 client.on("guildMemberAdd", member =>{
 	const channel = member.guild.channels.find('name','general');
