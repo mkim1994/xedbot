@@ -1,9 +1,5 @@
-//cd documents/xed/projects/xedbot
-//node bot.js
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
-//const token = "Mzg1NTExNzk4OTg1NzE5ODI4.DQCbYw.FD0HhhkcnXM6U_HuvT5gadWAKrU";
 
 client.on('ready',()=>{
 	console.log('i am ready!');
@@ -45,11 +41,3 @@ client.on("guildMemberUpdate", (oldMember, newMember)=>{
 		newMember.addRole(newMember.guild.roles.find('name','member')).catch(console.error);
 	}
 });
-
-
-
-
-
-
-
-
